@@ -1,0 +1,363 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0f284d;
+}
+
+header {
+    background-color: #0f1d31;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-family: serif;
+    
+}
+header span{
+    color: aqua;
+}
+#text{
+    font-size: 20px;
+    
+}
+.batch{
+    color: aqua;
+    font-weight: lighter;
+    font-size: 15px;
+font-style: italic;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.tabs button {
+    
+    background-color: #0f1d31;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 1px 15px  aqua;
+    animation: slideBottom 1s ease forwards;
+    animation: bounce 0.8s infinite alternate;
+    
+}
+@keyframes slideBottom {
+    0% {
+        transform: translatey(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translatey(0px);
+        opacity: 1;
+
+    }
+}
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+.tabs button.active {
+    background-color: aqua;
+    color: black;
+    box-shadow: none;
+}
+
+.content {
+    display: none;
+    padding: 20px;
+}
+
+.content.active {
+    display: block;
+}
+
+.profile-card {
+    background: #0f1d31;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 5px  aqua;
+}
+.profile-card a{
+    color: aqua;
+    text-decoration: none;   
+
+}
+.profile-card a:hover {
+    filter: drop-shadow(0px 1px 10px aqua);
+
+}
+.profile-card a:active {
+    filter: drop-shadow(0px 1px 10px aqua);
+
+}
+
+.profile-card img {
+
+    border-radius: 8px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.trip-card{
+    background: #0f1d31;
+    color: white;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 10px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+.trip-card img{
+    border-radius: 8px;
+    width: 280px;
+    height: 250px;
+    padding: 0;
+    margin: auto;
+}
+.trip-card span{
+    color: aqua;
+}
+@media (max-width: 768px) {
+    .trip-card img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+}
+.photos {
+    position: relative;
+}
+
+.photo {
+    display: none;
+    width: 100%;
+    height: auto;
+
+}
+
+
+.photo-grid {
+    display: none;
+    margin-top: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    
+}
+.photo-grid img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.show-button {
+    background-color: aqua;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    animation: bounce 0.8s infinite alternate;
+}
+
+.show-button:hover {
+    background-color:#0f1d31;
+    color: white;
+    box-shadow: 0px 1px 15px aqua;
+}
+.show-button:active{
+    box-shadow: 0px 1px 15px aqua;
+}
+
+.see-all-button {
+    display: none;
+    background-color: aqua;
+    text-decoration: none;
+    color: rgb(10, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.see-all-button:hover {
+    background-color: #0f1d31;
+    color: white;
+    box-shadow: 0px 1px 15px aqua;
+}
+.see-all-button:active {
+    background-color: #0f1d31;
+    color: white;
+    box-shadow: 0px 1px 15px aqua;
+}
+.link1{
+    color: aqua;
+    text-decoration: none;
+    animation: bounce 0.8s infinite alternate;
+}
+.see-all-button1 {
+    display: none;
+    background-color: aqua;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.see-all-button1:hover {
+    background-color: #0f1d31;
+    color: white;
+}
+.gallery {
+    display: grid;
+   flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery .photo {
+    flex: 1 1 auto;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+.show-bu {
+    display: inline-block;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: black;
+    background-color: aqua;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 20px;
+    margin-left: 25%;
+    animation: bounce 0.8s infinite alternate;
+    
+}
+
+.show-bu:hover {
+    background-color: #0f1d31;
+    color: white;
+}
+.content p{
+    text-align: center;
+    color: white;
+}
+.profile-card span{
+    font-weight: bolder;
+    
+}
+.trip-card li{
+    text-align: start;
+}
+.button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.gif-container {
+    margin: 100px;
+}
+
+.gif-container img {
+    width: 150px;
+    /* Adjust the GIF size */
+    height: auto;
+    /* Maintain the GIF's aspect ratio */
+}
+.gif-container img{
+    width: 150px;
+    height: auto;
+    color: aliceblue
+    
+}
+
+
+
+.trip-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+#gifContainer {
+    
+    justify-content: center;
+    align-items: center;
+    color: #080505;
+    height: 10px;
+    margin-top: 20px;
+    animation: fadeOut 7s forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+footer{
+    color: white;
+    text-align: center;
+    background-color: #0f1d31;
+    padding: 10px;
+}
+footer span{
+    color: aqua;
+}

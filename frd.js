@@ -19,7 +19,7 @@ var typed = new Typed("#text", {
   loop: true,
 });
 
-/*function activateTab(tabButton) {
+function activateTab(tabButton) {
   const buttons = document.querySelectorAll(".tab-button");
   const contents = document.querySelectorAll(".content");
 
@@ -31,8 +31,8 @@ var typed = new Typed("#text", {
   tabButton.classList.add("active");
   const contentId = tabButton.getAttribute("data-tab");
   document.getElementById(contentId).classList.add("active");
-}*/
-function activateTabWithGif(tabButton, gifId) {
+}
+/*function activateTabWithGif(tabButton, gifId) {
   const buttons = document.querySelectorAll(".tab-button");
   const contents = document.querySelectorAll(".content");
   const gifContainers = document.querySelectorAll(".gif-container");
@@ -66,7 +66,7 @@ function activateTabWithGif(tabButton, gifId) {
     content.style.display = "block"; // Show the content
     content.classList.add("active"); // Mark the content as active
   }, 3000); // 5 seconds
-}
+}*/
 
 
 const details = [

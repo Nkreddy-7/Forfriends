@@ -17,21 +17,13 @@
     </header>
 
     <div class="tabs">
-        <button class="tab-button active" data-tab="profiles" onclick="activateTabWithGif(this, 'gif1')">Profiles</button>
-        <button class="tab-button" data-tab="trips" onclick="activateTabWithGif(this, 'gif2')">Trips</button>
-        <button class="tab-button" data-tab="gallery" onclick="activateTabWithGif(this, 'gif3')">Photo Gallery</button>
+        <button class="tab-button active" data-tab="profiles" onclick="activateTab(this)">Profiles</button>
+        <button class="tab-button" data-tab="trips" onclick="activateTab(this)">Trips</button>
+        <button class="tab-button" data-tab="gallery" onclick="activateTab(this)">Photo Gallery</button>
         
         
     </div>
-    <div id="gif1" class="gif-container" style="display: none;">
-        <img src="firstpage.gif" alt="Loading Profile">
-    </div>
-    <div id="gif2" class="gif-container" style="display: none;">
-        <img src="car1.gif" alt="Loading Trips">
-    </div>
-    <div id="gif3" class="gif-container" style="display: none;">
-        <img src="load.gif" alt="Loading Gallery">
-    </div>
+   
     
 <div id="profiles" class="content active">
 </div>

@@ -23,11 +23,11 @@ function activateTab(tabButton) {
   const buttons = document.querySelectorAll(".tab-button");
   const contents = document.querySelectorAll(".content");
 
-  // Remove active classes from all buttons and contents
+  
   buttons.forEach((btn) => btn.classList.remove("active"));
   contents.forEach((content) => content.classList.remove("active"));
 
-  // Add active class to the clicked button and its corresponding content
+
   tabButton.classList.add("active");
   const contentId = tabButton.getAttribute("data-tab");
   document.getElementById(contentId).classList.add("active");
@@ -88,7 +88,7 @@ const details = [
       "https://drive.google.com/drive/folders/124mWct1bMXbMpk_k2JWMAYQnfhNqFmxS",
     Address: "Madhanapalli.",
     live: "https://maps.app.goo.gl/x896Dyec3PN62Zk49?g_st=aw",
-    branch: "EEE-B",
+    branch: "EEE",
   },
   {
     img: "p3.jpg",
@@ -98,17 +98,17 @@ const details = [
       "https://drive.google.com/drive/folders/19BgVh1B1f2dw1F4xO0NcstzsQ6Ve9Aas",
     Address: "Kondapuram,Kadapa.",
     live: "https://maps.app.goo.gl/y7FVtGfJKoFWr5Hr8",
-    branch: "EEE-B",
+    branch: "EEE",
   },
   {
     img: "p4.jpg",
     name: "BEJADA ANJALI",
-    dob: " 08 - Apr - 2004",
+    dob: " 08 - Apr - 2003",
     bphotos:
       "https://drive.google.com/drive/folders/190EKiI4ir1CM6FJkz4XiNiuTr8unjxL4",
     Address: "Tirupati.",
     live: "https://maps.app.goo.gl/Hmvb2V3wBt3iKJ188",
-    branch: "EEE-A",
+    branch: "EEE",
   },
   {
     img: "p5.jpg",
@@ -118,7 +118,7 @@ const details = [
       "https://drive.google.com/drive/folders/190FNH9zth8OHmda4I4QOWo_TQZKmjmf4",
     Address: "Jammalamadugu.",
     live: "https://maps.app.goo.gl/eJnSaD9KiERaXwTPA",
-    branch: "CSE-C",
+    branch: "CSE",
   },
   {
     img: "p6.jpg",
@@ -128,7 +128,7 @@ const details = [
       "https://drive.google.com/drive/folders/19A26rTBkNQEECi8EpDK9lEHFRvGuvE6v",
     Address: "Proddatur.",
     live: "https://maps.app.goo.gl/trMXq3Ae7sBX6ocE9",
-    branch: "AI&DS-B",
+    branch: "AI&DS",
   },
   {
     img: "p7.jpg",
@@ -138,7 +138,7 @@ const details = [
       "https://drive.google.com/drive/folders/127fUAOwU5rm65J4AzqPWvqEYU0u57AWM",
     Address: "Kamalapuram.",
     live: "https://maps.app.goo.gl/jbWJ2pTymjQMCHWv9",
-    branch: "EEE-A",
+    branch: "EEE",
   },
 ];
 let profiles = "";
@@ -200,6 +200,6 @@ function showGif() {
   setTimeout(() => {
     gifContainer.style.display = "none";
     tripContent.style.display = "block";
-  }, 5000); // 5 seconds
+  }, 5000); 
 }
 

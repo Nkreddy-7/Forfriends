@@ -78,7 +78,7 @@ const details = [
       "https://drive.google.com/drive/folders/123nmHS-obAxnpX0BxAwiuDoedrx7mH12",
     Address: "singanapalli,Nellore.",
     live: "https://maps.app.goo.gl/mF5Z1anvvC9JmJxL7",
-    branch: "EEE-B",
+    branch: "EEE",
   },
   {
     img: "p2.jpg",
@@ -151,7 +151,7 @@ details.forEach((detail) => {
           <p>( <a href="${detail.bphotos}" target="_blank">  Birthday Photos</a>) ! Add or view your Bday photos by clicking link?</p>
           <p><span>Address:</span>${detail.Address}</p>
           <p>  <span>Live location:</span><a href="${detail.live}"> Visit</a></p>
-          <P><span>Batch</span>:2021-2025(<span class="batch">${detail.branch}</span>)</P>
+          <P><span>Batch</span>:2021-2025(<span class="batch">${ detail.branch }</span>)</P>
         </div>
         `;
 });

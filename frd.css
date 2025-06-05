@@ -208,6 +208,13 @@ font-style: italic;
     cursor: pointer;
     margin: 5px;
 }
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
 
 .see-all-button:hover {
     background-color: #0f1d31;

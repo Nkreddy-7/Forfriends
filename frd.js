@@ -19,7 +19,7 @@ var typed = new Typed("#text", {
   loop: true,
 });
 
-/*function activateTab(tabButton) {
+function activateTab(tabButton) {
   const buttons = document.querySelectorAll(".tab-button");
   const contents = document.querySelectorAll(".content");
 
@@ -31,42 +31,21 @@ var typed = new Typed("#text", {
   tabButton.classList.add("active");
   const contentId = tabButton.getAttribute("data-tab");
   document.getElementById(contentId).classList.add("active");
-}*/
-function activateTabWithGif(tabButton, gifId) {
-  const buttons = document.querySelectorAll(".tab-button");
-  const contents = document.querySelectorAll(".content");
-  const gifContainers = document.querySelectorAll(".gif-container");
-
-  // Remove active classes from all buttons and contents
-  buttons.forEach((btn) => btn.classList.remove("active"));
-  contents.forEach((content) => {
-    content.classList.remove("active");
-    content.style.display = "none";
-  });
-
-  // Hide all GIF containers
-  gifContainers.forEach((gif) => {
-    gif.style.display = "none";
-  });
-
-  // Show the GIF for the selected tab
-  const gifContainer = document.getElementById(gifId);
-  gifContainer.style.display = "block";
-
-  // Add active class to the clicked button
-  tabButton.classList.add("active");
-
-  // Get the content ID associated with the button
-  const contentId = tabButton.getAttribute("data-tab");
-
-  // Delay showing the content until after the GIF is displayed
-  setTimeout(() => {
-    gifContainer.style.display = "none"; // Hide the GIF
-    const content = document.getElementById(contentId);
-    content.style.display = "block"; // Show the content
-    content.classList.add("active"); // Mark the content as active
-  }, 3000); // 5 seconds
 }
+ /*function activateTab(button) {
+        // Remove the 'active' class from all tab buttons
+        document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+
+        // Add the 'active' class to the clicked button
+        button.classList.add('active');
+
+        // Hide all tab content
+        document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+
+        // Show the corresponding tab content
+        const tabId = button.getAttribute('data-tab');
+        document.getElementById(tabId).classList.add('active');
+    }*/
 
 
 const details = [

@@ -32,7 +32,7 @@ function activateTab(tabButton) {
   const contentId = tabButton.getAttribute("data-tab");
   document.getElementById(contentId).classList.add("active");
 }
-<<<<<<< HEAD
+
  /*function activateTab(button) {
         // Remove the 'active' class from all tab buttons
         document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
@@ -47,7 +47,6 @@ function activateTab(tabButton) {
         const tabId = button.getAttribute('data-tab');
         document.getElementById(tabId).classList.add('active');
     }*/
-=======
 /*function activateTabWithGif(tabButton, gifId) {
   const buttons = document.querySelectorAll(".tab-button");
   const contents = document.querySelectorAll(".content");
@@ -83,7 +82,6 @@ function activateTab(tabButton) {
     content.classList.add("active"); // Mark the content as active
   }, 3000); // 5 seconds
 }*/
->>>>>>> d9a8bbfb143dd0b80d20faa01634db471f6d5568
 
 
 const details = [
@@ -167,13 +165,13 @@ details.forEach((detail) => {
           <p><span>Date of Birth:</span>${detail.dob}</p> 
           <p>( <a href="${detail.bphotos}" target="_blank">  Birthday Photos</a>) ! Add or view your Bday photos by clicking link?</p>
           <p><span>Address:</span>${detail.Address}</p>
-<<<<<<< HEAD
+
           <p>  <span>Live location:</span><a href=" ${detail.live} "> Visit</a></p>
           <P><span>Batch</span>:2021-2025(<span class="batch"> ${ detail.branch } </span>)</P>
-=======
+
           <p>  <span>Live location:</span><a href="${detail.live}"> Visit</a></p>
           <P><span>Batch</span>:2021-2025(<span class="batch">${ detail.branch }</span>)</P>
->>>>>>> d9a8bbfb143dd0b80d20faa01634db471f6d5568
+
         </div>
         `;
 });

@@ -169,9 +169,6 @@ details.forEach((detail) => {
           <p>  <span>Live location:</span><a href=" ${detail.live} "> Visit</a></p>
           <P><span>Batch</span>:2021-2025(<span class="batch"> ${ detail.branch } </span>)</P>
 
-          <p>  <span>Live location:</span><a href="${detail.live}"> Visit</a></p>
-          <P><span>Batch</span>:2021-2025(<span class="batch">${ detail.branch }</span>)</P>
-
         </div>
         `;
 });
